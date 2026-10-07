@@ -25,6 +25,14 @@ Sau đó mở `http://127.0.0.1:8080` trong trình duyệt. Dùng `Ctrl+C` để
 
 Có thể dùng lại repository và dự án Vercel của landing hiện tại. Sao chép mã website vào thư mục deployment của landing, kiểm tra bản preview, rồi cập nhật production theo cấu hình hiện có. Không gộp thư mục engine vào repository landing.
 
-Bản website này đã được chuẩn bị trên máy local; chưa push repository hoặc triển khai lên `nexusengine.id.vn` trong bước tạo mã nguồn này.
+Bản đầu tiên đã triển khai trên `nexusengine.id.vn`. Bản mở rộng được chuẩn bị trên nhánh `nexusengine-product-hub` để kiểm tra preview trước khi cập nhật production.
+
+## Bản mở rộng: product hub và field guide
+
+- Demo minh họa tương tác bằng phụ đề viết sẵn (English, Vietnamese, Spanish), thanh timeline và SRT mẫu tải được. Demo không gọi AI, không upload và không phải kết quả chạy engine.
+- Ba ảnh giao diện thật của desktop prototype dùng video test tổng hợp: nguồn, tách phụ đề và editor timeline. Ảnh không chứa khóa API hay media khách hàng.
+- Ba trang kiến thức: `guide-localization.html`, `guide-subtitles.html`, `guide-voiceover.html`. Có mục lục, checklist sao chép và CSS cho in/lưu PDF.
+- Thư viện bài viết có bộ lọc Strategy / Production; trang chủ bổ sung use cases, checklist chất lượng và liên hệ early access.
+- `experience.css` và `experience.js` chứa phần mở rộng, tách khỏi mã landing ban đầu. `review/` là tài nguyên kiểm tra local và không được deploy.
 
 Thông tin founder, khách hàng, tài trợ và trạng thái tích hợp cần phản ánh dữ kiện thực tế khi cập nhật website. Nội dung quyền riêng tư đề xuất được lưu tại `PRIVACY-COPY.md` và phải được đối chiếu lại nếu sau này thêm form, upload, analytics hoặc dịch vụ khác.
